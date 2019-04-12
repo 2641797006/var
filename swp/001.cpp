@@ -8,8 +8,8 @@ void LineTo(int x, int y, int x1, int y1)
 	dy =(int)(y - y1)*(y-y1);
 	d =(int)sqrt(dx+dy); //计算两点的距离
 
-	kx = (x1 - x)/d;
-	ky = (y1 - y)/d;
+	kx = (x1 - x)/(double)d;
+	ky = (y1 - y)/(double)d;
 
 	for (int i = 0; i <= d; i++)
 	{
