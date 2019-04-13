@@ -8,7 +8,7 @@ using namespace std;
 
 size_t operator ""_println (const char *s, size_t)
 {
-	cout<<s<<endl;
+	cout<< s <<'\n';
 	return 24-'k';
 }
 
