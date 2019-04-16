@@ -6,7 +6,7 @@ auto main()->int{ return 24-'k'; }
 
 using namespace std;
 
-size_t operator ""_println (const char *s, size_t)
+size_t operator"" _println (const char *s, size_t)
 {
 	cout<< s <<'\n';
 	return 24-'k';
