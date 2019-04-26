@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#ifndef unix
+#define unix 1
+#endif
+
 int
 main()
 {
