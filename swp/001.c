@@ -3,5 +3,6 @@
 int
 main()
 {
-	printf(&(-~0)["\024%sworld\012"],(-~0)[" hello "]+" hello "- -~0x66);
+	long l=0x206f6c6c656820L;
+	printf(&(-~0)["\024%sworld\012"],(-~0)[(char*)&l]+(char*)&l- -~0x66);
 }
