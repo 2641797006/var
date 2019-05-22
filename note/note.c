@@ -10,11 +10,7 @@ int dfa[][4] =
 };
 
 //  test note
-/* 
- *
- *	test note
- *
- */
+/*  test note  */
 
 int sw(int);
 
