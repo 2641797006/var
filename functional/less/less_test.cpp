@@ -22,6 +22,7 @@ struct less : public binary_function<T, T, bool>
 	}
 };
 
+struct __is_transparent;
 template<>
 struct less<void>
 {
@@ -34,6 +35,7 @@ struct less<void>
 	{
 		return std::forward<T>(t) < std::forward<_Up>(u);
 	}
+	typedef __is_transparent is_transparent;
 };
 
 
