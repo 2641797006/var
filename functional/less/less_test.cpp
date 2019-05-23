@@ -1,5 +1,6 @@
 #include <iostream>
 
+// 2个参数的函数,  记录函数参数,返回值类型, c++17中弃用
 template<typename _Arg1, typename _Arg2, typename _Result>
 struct binary_function
 {
