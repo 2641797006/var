@@ -1,28 +1,16 @@
-#ifndef _MUTABLEBIGINTEGER_H_
-#define _MUTABLEBIGINTEGER_H_
-
-#ifndef _ARRAY_H_
-#include "Array.h"
-#endif
-
-namespace akm {
-using namespace std;
-
-class MutableBigInteger {
-  private:
-	Array<int> value;
-	int intLen;
-	int offset = 0;
-
-  public:
-	MutableBigInteger();
+template <class T>
+struct A {
+	void operator= (A && other) {
+		new(this) A();
+	}
 };
 
-MutableBigInteger::MutableBigInteger() {
-        value = Array<int>(1);
-        intLen = 0;
-    }
+class B {
+  public:
+	A<int> value;
 
-} // namespace akm
+	B() {
+		value = A<int>();
+	}
+};
 
-#endif // _MUTABLEBIGINTEGER_H_

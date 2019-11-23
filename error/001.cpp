@@ -1,13 +1,16 @@
-#include <iostream>
-#include "Array.h"
-#include "MutableBigInteger.h"
-using namespace std;
-using namespace akm;
+struct A {
+	void operator= (A && other) {
+		new(this) A();
+	}
+};
+
+struct B {
+	A a;
+	B() { a = A(); }
+};
 
 int main()
 {
-	Array<int> a;
-	a = Array<int>(1);
-	MutableBigInteger mb;
+
 }
 
