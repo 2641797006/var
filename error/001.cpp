@@ -4,13 +4,9 @@ struct A {
 	}
 };
 
-struct B {
-	A a;
-	B() { a = A(); }
-};
-
 int main()
 {
-
+	A a;
+	a = A();
 }
 
